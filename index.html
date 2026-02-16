@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>Driftzz Support</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <style>
     :root {
       --bg: #0b0f1a;
@@ -14,43 +13,18 @@
       --muted: #9aa4d6;
       --border: rgba(255,255,255,0.08);
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: radial-gradient(1200px 600px at 50% -200px, #1a2350, var(--bg));
       color: var(--text);
       line-height: 1.6;
     }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 48px 20px 80px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-
-    header h1 {
-      font-size: 2.6rem;
-      margin-bottom: 12px;
-      letter-spacing: 0.4px;
-    }
-
-    header p {
-      color: var(--muted);
-      max-width: 600px;
-      margin: auto;
-    }
-
+    .container { max-width: 900px; margin: auto; padding: 48px 20px 80px; }
+    header { text-align: center; margin-bottom: 56px; }
+    header h1 { font-size: 2.6rem; margin-bottom: 12px; letter-spacing: 0.4px; }
+    header p { color: var(--muted); max-width: 640px; margin: auto; }
     .card {
       background: linear-gradient(180deg, #151c38, var(--card));
       border: 1px solid var(--border);
@@ -59,21 +33,9 @@
       margin-bottom: 28px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.35);
     }
-
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      color: var(--muted);
-    }
-
-    .contact-box {
-      text-align: center;
-    }
-
+    .card h2 { margin-top: 0; font-size: 1.35rem; margin-bottom: 12px; }
+    .card p, .card li { color: var(--muted); }
+    .contact-box { text-align: center; }
     .email {
       display: inline-block;
       margin-top: 14px;
@@ -81,111 +43,78 @@
       border-radius: 12px;
       background: linear-gradient(135deg, #6aa6ff, #8f7bff);
       color: #0b0f1a;
-      font-weight: 600;
+      font-weight: 700;
       text-decoration: none;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
       box-shadow: 0 10px 30px rgba(106,166,255,0.35);
     }
-
-    .email:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 16px 40px rgba(106,166,255,0.45);
-    }
-
-    .faq {
-      display: grid;
-      gap: 18px;
-    }
-
-    .faq-item h3 {
-      margin: 0 0 6px;
-      font-size: 1.05rem;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 64px;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.1rem;
-      }
-    }
+    .email:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(106,166,255,0.45); }
+    .faq { display: grid; gap: 18px; }
+    .faq-item h3 { margin: 0 0 6px; font-size: 1.05rem; }
+    .links a { color: #b8cdff; text-decoration: underline; }
+    footer { text-align: center; margin-top: 64px; color: var(--muted); font-size: 0.9rem; }
+    @media (max-width: 600px) { header h1 { font-size: 2.1rem; } }
   </style>
 </head>
-
 <body>
   <div class="container">
-
     <header>
       <h1>Driftzz Support</h1>
-      <p>
-        Need help, found a bug, or have a question about the Driftzz app?
-        You’re in the right place.
-      </p>
+      <p>Need help with Driftzz, subscriptions, billing, account issues, or bug reports? Contact us below.</p>
     </header>
 
     <div class="card contact-box">
       <h2>Contact Support</h2>
-      <p>
-        We’re happy to help with app usage, technical issues,
-        feature questions, or feedback.
-      </p>
+      <p>For technical issues, feature requests, and account support.</p>
+      <a class="email" href="mailto:1294ravinder@gmail.com?subject=Driftzz%20Support%20Request">Contact: 1294ravinder@gmail.com</a>
+      <p style="margin-top:14px; font-size:0.9rem;">Typical response time: 24–48 hours</p>
+      <p style="font-size:0.9rem; margin-top:0;">Developer: Ravinder Poonia (India)</p>
+    </div>
 
-      <a class="email" href="mailto:1294ravinder@gmail.com">
-        Contact: 1294ravinder@gmail.com
-      </a>
-
-      <p style="margin-top:14px; font-size:0.9rem;">
-        Typical response time: 24–48 hours
-      </p>
+    <div class="card">
+      <h2>Subscription & Billing Help</h2>
+      <ul>
+        <li>Driftzz offers a 3-day free trial (full app access), then paid subscription options.</li>
+        <li>Manage or cancel subscriptions in iPhone Settings → Apple ID → Subscriptions.</li>
+        <li>Restore purchases from the app’s Subscription screen using “Restore”.</li>
+        <li>Billing and refunds are handled by Apple. For refund requests, use Apple’s reportaproblem portal.</li>
+      </ul>
     </div>
 
     <div class="card">
       <h2>Frequently Asked Questions</h2>
-
       <div class="faq">
         <div class="faq-item">
           <h3>Is Driftzz free to use?</h3>
-          <p>
-            Driftzz offers core features for free.
-            Some premium features may be added in the future.
-          </p>
+          <p>Yes. Free users can access Dashboard and Breathing. Insights and premium tools require Pro after trial.</p>
         </div>
-
         <div class="faq-item">
           <h3>The app is not working correctly</h3>
-          <p>
-            Please make sure you’re using the latest version of the app.
-            If the issue continues, contact us with details and screenshots.
-          </p>
+          <p>Please update to the latest version. If the issue continues, email us with device model, iOS version, and screenshots.</p>
         </div>
-
         <div class="faq-item">
           <h3>How do I report a bug?</h3>
-          <p>
-            Email us with your device model, iOS version,
-            and what happened before the issue occurred.
-          </p>
+          <p>Email us steps to reproduce, expected behavior, and what actually happened.</p>
         </div>
       </div>
     </div>
 
-    <div class="card">
-      <h2>Your Privacy Matters</h2>
+    <div class="card links">
+      <h2>Legal</h2>
       <p>
-        Driftzz respects your privacy and handles data responsibly.
-        You can review our Privacy Policy directly from the App Store listing.
+        Privacy Policy:
+        <a href="https://ravinder82.github.io/driftzz-privacy/" target="_blank" rel="noopener">https://ravinder82.github.io/driftzz-privacy/</a>
       </p>
+      <p>
+        Terms of Use (Apple Standard EULA):
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">
+          https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+        </a>
+      </p>
+      <p>Last updated: February 16, 2026</p>
     </div>
 
-    <footer>
-      © Driftzz App — Support & Assistance
-    </footer>
-
+    <footer>© Driftzz App — Support & Assistance</footer>
   </div>
 </body>
 </html>
